@@ -169,6 +169,22 @@
                 </tr>
             </table>
 
+            <td><table bgcolor="C0C0C0">
+                    <tr>
+                        <td>&nbsp;</td><td align="left" style="width: 400px">
+                            <input type="submit" value="Submit" name = "add" class='btn'></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td><td align="left" style="width: 400px">
+                            <input type="reset" value="Reset" name = 'reset' class='btn' onclick="reset();"></td>
+                    </tr>
+                </table></td></tr>
+            </table>
+
+            </table>
+
+            
+
 
 
 
