@@ -29,7 +29,7 @@
 
                 <tr>
                     <td>Address:</td>
-                        <td><input type="text" name = "address" style="width: 300px">
+                    <td><input type="text" name = "address" style="width: 300px">
                     </td>
                     <td>Gender:</td>
                     <td>
@@ -58,30 +58,28 @@
 
                         </table>
                     </td>
-                </tr>
 
+                <td>
+                    <table bgcolor="C0C0C0">
+                        <tr>
+                            <td>Tax Period:</td>
+                            <td><input type="text" name = "taxperiod" style="width: 100px">
+                            </td>
+                        </tr>
 
-                    <td>
-                        <table bgcolor="C0C0C0">
-                            <tr>
-                                <td>Tax Period:</td>
-                                <td><input type="text" name = "taxperiod" style="width: 100px">
-                                </td>
-                            </tr>
+                        <tr><td>Tax Code:</td>
+                            <td><input type="text" name = "taxcode" style="width: 300px">
+                            </td></tr>
 
-                            <tr><td>Tax Code:</td>
-                                <td><input type="text" name = "taxcode" style="width: 300px">
-                                </td></tr>
+                        <tr>
+                            <td>Pay Date:</td>
+                            <td><input type="text" name = "paydate" style="width: 400px">
+                            </td>
+                        </tr>
 
-                            <tr>
-                                <td>Pay Date:</td>
-                                <td><input type="text" name = "paydate" style="width: 400px">
-                                </td>
-                            </tr>
-
-                            </tr>
-                        </table>
-                    </td>
+                        </tr>
+                    </table>
+                </td>
                 </tr>
             </table>
 
@@ -166,27 +164,24 @@
                 </textarea></td>
                             </tr>
                         </table></td>
+
+                    <td><table bgcolor="C0C0C0">
+                            <tr>
+                                <td>&nbsp;</td><td align="left" style="width: 400px">
+                                    <input type="submit" value="Submit" name = "add" class='btn'></td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td><td align="left" style="width: 400px">
+                                    <input type="reset" value="Reset" name = 'reset' class='btn' onclick="reset();"></td>
+                            </tr>
+                        </table>
+                    </td>
                 </tr>
             </table>
 
-            <td><table bgcolor="C0C0C0">
-                    <tr>
-                        <td>&nbsp;</td><td align="left" style="width: 400px">
-                            <input type="submit" value="Submit" name = "add" class='btn'></td>
-                    </tr>
-                    <tr>
-                        <td>&nbsp;</td><td align="left" style="width: 400px">
-                            <input type="reset" value="Reset" name = 'reset' class='btn' onclick="reset();"></td>
-                    </tr>
-                </table></td></tr>
             </table>
 
-            </table>
-
-
-
-
-
+        </form>
 
     </div>
 
