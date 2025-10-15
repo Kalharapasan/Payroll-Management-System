@@ -336,7 +336,12 @@ if(isset($add))
                     <table bgcolor="#808080">
                         <tr>
                             <td>Reference Note:</td>
-                            <td><textarea name="refnote" cols="73" rows="5"></textarea></td>
+                            <td>
+                                <textarea name="refnote" cols="73" rows="5">
+                                    Net Pay: £<?php echo $netpay; ?>
+                                    This is based on Income Tax, National Insurance and Student Loan information from August 2019.
+                                </textarea>
+                            </td>
                         </tr>
                     </table>
                 </td>
