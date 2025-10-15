@@ -1,6 +1,7 @@
 # Payroll Management System
 
 A simple, PHP-based Payroll Management System built to manage employee records, calculate salaries, and generate basic payroll reports. This repository contains the web application files meant to run on a local PHP/MySQL stack (for example, XAMPP).
+<img width="1328" height="613" alt="Capture" src="https://github.com/user-attachments/assets/fde3c3fb-9a41-4285-a0ab-4dea4cf29eb0" />
 
 ## Features
 - Employee CRUD (Create, Read, Update, Delete)
