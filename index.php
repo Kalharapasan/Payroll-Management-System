@@ -6,9 +6,41 @@
     <title>PMS</title>
     <link rel="stylesheet" href="css.css" type="text/css">
 </head>
-<body>
+<body bgcolor="#808080">
 
-    
+    <center><img src="./Img/logo.png">
+        <b><font color="white" style ="font-size:60"> Payroll Management Systems </font></b>
+
+    </center>
+
+    <hr size=5 color = "white">
+
+    <div>
+        <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
+            <table class="style1">
+                <tr>
+                    <td>Employee Name:</td>
+                    <td><input type="text" name = "employee" style="width: 300px">
+                    </td>
+                    <td>Post Code:</td>
+                    <td><input type="text" name = "postcode" style="width: 300px">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Address:</td>
+                    <td><input type="text" name = "address" style="width: 300px">
+                    </td>
+                    <td>Gender:</td>
+                    <td>
+                        Male<input type="radio" value="m" name="g" value="<?php echo $m; ?>" onfocus="this.value=''">
+                        Female<input type="radio" value="f" name="g" value="<?php echo $g; ?>" onfocus="this.value=''">
+                    </td>
+                </tr>
+            </table>
+    </div>
+
+
 
 </body>
 </html>
