@@ -176,7 +176,7 @@ if(isset($add))
                             <td>Tax Code:</td>
                             <td>
                                 <input type="text" name="taxcode" style="width: 300px"
-                                      required
+                                       required
                                 >
                             </td>
                         </tr>
@@ -338,7 +338,7 @@ if(isset($add))
                             <td>Reference Note:</td>
                             <td>
                                 <textarea name="refnote" cols="73" rows="5">
-                                    Net Pay: £<?php echo $netpay; ?>
+                                    Net Pay: Â£<?php echo $netpay; ?>
                                     This is based on Income Tax, National Insurance and Student Loan information from August 2019.
                                 </textarea>
                             </td>
