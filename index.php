@@ -11,7 +11,21 @@ if(isset($add))
     $nipayment = ($grosspay * 2.3) / 100;
     $deduction = $taxablepay + $pensionablepay + $studentloan + $nipayment;
     $netpay = $grosspay - $deduction;
-    
+
+    $innercity = $innercity;
+    $basicsalary=$basicsalary;
+    $overtime=$overtime;
+
+    $referenceno = rand(1200, 1000000);
+    $employer = "Paul DJ Oamen Aviation";
+    $empaddress = "1 Godson Close, 179 MM, London";
+    $taxperiod = date('m');
+    $pension = $taxperiod * $pensionablepay;
+    $tax = $taxperiod * $taxablepay;
+    $paydate = date('d/m/y');
+    $studentref = $studentloan + $taxperiod;
+
+
 
 }
 
@@ -120,15 +134,30 @@ if(isset($add))
                     <table bgcolor="#808080">
                         <tr>
                             <td>Reference No:</td>
-                            <td><input type="text" name="referenceno" style="width: 400px"></td>
+                            <td>
+                                <input type="text" name="referenceno" style="width: 400px"
+                                       value="<?php echo $referenceno?>"
+                                       onfocus="this.value=''"
+                                >
+                            </td>
                         </tr>
                         <tr>
                             <td>Employer:</td>
-                            <td><input type="text" name="employer" style="width: 400px"></td>
+                            <td>
+                                <input type="text" name="employer" style="width: 400px"
+                                       value="<?php echo $employer?>"
+                                       onfocus="this.value=''"
+                                >
+                            </td>
                         </tr>
                         <tr>
                             <td>Emp Address:</td>
-                            <td><input type="text" name="empaddress" style="width: 400px"></td>
+                            <td>
+                                <input type="text" name="empaddress" style="width: 400px"
+                                       value="<?php echo $empaddress?>"
+                                       onfocus="this.value=''"
+                                >
+                            </td>
                         </tr>
                     </table>
                 </td>
@@ -136,15 +165,29 @@ if(isset($add))
                     <table bgcolor="#C0C0C0">
                         <tr>
                             <td>Tax Period:</td>
-                            <td><input type="text" name="taxperiod" style="width: 100px"></td>
+                            <td>
+                                <input type="text" name="taxperiod" style="width: 100px"
+                                       value="<?php echo $taxperiod?>"
+                                       onfocus="this.value=''"
+                                >
+                            </td>
                         </tr>
                         <tr>
                             <td>Tax Code:</td>
-                            <td><input type="text" name="taxcode" style="width: 300px"></td>
+                            <td>
+                                <input type="text" name="taxcode" style="width: 300px"
+                                      required
+                                >
+                            </td>
                         </tr>
                         <tr>
                             <td>Pay Date:</td>
-                            <td><input type="text" name="paydate" style="width: 400px"></td>
+                            <td>
+                                <input type="text" name="paydate" style="width: 400px"
+                                       value="<?php echo $paydate?>"
+                                       onfocus="this.value=''"
+                                >
+                            </td>
                         </tr>
                     </table>
                 </td>
@@ -154,27 +197,69 @@ if(isset($add))
         <table class="style1">
             <tr>
                 <td>Inner City Weighting:</td>
-                <td><input type="text" name="innercity" style="width: 200px"></td>
+                <td>
+                    <input type="text" name="innercity" style="width: 200px"
+                           value="<?php echo $innercity?>"
+                           onfocus="this.value=''"
+                    >
+                </td>
                 <td>Tax ToDate:</td>
-                <td><input type="text" name="tax" style="width: 200px"></td>
+                <td>
+                    <input type="text" name="tax" style="width: 200px"
+                           value="$<?php echo $tax?>"
+                           onfocus="this.value=''"
+                    >
+                </td>
                 <td>Pension ToDate:</td>
-                <td><input type="text" name="pension" style="width: 200px"></td>
+                <td>
+                    <input type="text" name="pension" style="width: 200px"
+                           value="$<?php echo $pension?>"
+                           onfocus="this.value=''"
+                    >
+                </td>
             </tr>
             <tr>
                 <td>Basic Salary:</td>
-                <td><input type="text" name="basicsalary" style="width: 200px"></td>
+                <td>
+                    <input type="text" name="basicsalary" style="width: 200px"
+                           value="$<?php echo $basicsalary?>"
+                           onfocus="this.value=''"
+                    >
+                </td>
                 <td>Student ToDate:</td>
-                <td><input type="text" name="studentref" style="width: 200px"></td>
+                <td>
+                    <input type="text" name="studentref" style="width: 200px"
+                           value="<?php echo $studentref?>"
+                           onfocus="this.value=''"
+                    >
+                </td>
                 <td>NI Code:</td>
-                <td><input type="text" name="nicode" style="width: 200px"></td>
+                <td>
+                    <input type="text" name="nicode" style="width: 200px">
+                </td>
             </tr>
             <tr>
                 <td>Over Time:</td>
-                <td><input type="text" name="overtime" style="width: 200px"></td>
+                <td>
+                    <input type="text" name="overtime" style="width: 200px"
+                           value="<?php echo $overtime?>"
+                           onfocus="this.value=''"
+                    >
+                </td>
                 <td>Student Loan:</td>
-                <td><input type="text" name="studentloan" style="width: 200px"></td>
+                <td>
+                    <input type="text" name="studentloan" style="width: 200px"
+                           value="$<?php echo $studentloan?>"
+                           onfocus="this.value=''"
+                    >
+                </td>
                 <td>NI Number:</td>
-                <td><input type="text" name="ninumber" style="width: 200px"></td>
+                <td>
+                    <input type="text" name="ninumber" style="width: 200px"
+                           value="<?php echo $ninumber?>"
+                           onfocus="this.value=''"
+                    >
+                </td>
             </tr>
         </table>
 
@@ -184,7 +269,12 @@ if(isset($add))
                     <table bgcolor="#808080">
                         <tr>
                             <td>NI Payment:</td>
-                            <td><input type="text" name="nipayment" style="width: 380px"></td>
+                            <td>
+                                <input type="text" name="nipayment" style="width: 380px"
+                                       value="$<?php echo $nipayment?>"
+                                       onfocus="this.value=''"
+                                >
+                            </td>
                         </tr>
                         <tr>
                             <td>Taxable Pay:</td>
@@ -197,7 +287,12 @@ if(isset($add))
                         </tr>
                         <tr>
                             <td>Pensionable Pay:</td>
-                            <td><input type="text" name="pensionablepay" style="width: 380px"></td>
+                            <td>
+                                <input type="text" name="pensionablepay" style="width: 380px"
+                                       value="$<?php echo $pensionablepay?>"
+                                       onfocus="this.value=''"
+                                >
+                            </td>
                         </tr>
                     </table>
                 </td>
@@ -214,11 +309,21 @@ if(isset($add))
                         </tr>
                         <tr>
                             <td>Deductions:</td>
-                            <td><input type="text" name="deduction" style="width: 400px"></td>
+                            <td>
+                                <input type="text" name="deduction" style="width: 400px"
+                                       value="$<?php echo $deduction?>"
+                                       onfocus="this.value=''"
+                                >
+                            </td>
                         </tr>
                         <tr>
                             <td>Net Pay:</td>
-                            <td><input type="text" name="netpay" style="width: 400px"></td>
+                            <td>
+                                <input type="text" name="netpay" style="width: 400px"
+                                       value="$<?php echo $netpay?>"
+                                       onfocus="this.value=''"
+                                >
+                            </td>
                         </tr>
                     </table>
                 </td>
