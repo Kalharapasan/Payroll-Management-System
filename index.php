@@ -142,7 +142,33 @@
                                 </td></tr>
 
                         </table></td>
-                
+                    <td><table bgcolor="C0C0C0">
+                            <tr>
+                                <td>Gross Pay:</td>
+                                <td><input type="text" name = "grosspay" style="width: 400px">
+                                </td></tr>
+                            <tr><td>Deductions:</td>
+                                <td><input type="text" name = "deduction" style="width: 400px">
+                                </td></tr>
+
+                            <tr><td>Net Pay:</td>
+                                <td><input type="text" name = "netpay" style="width: 400px">
+                                </td></tr>
+                        </table></td></tr>
+            </table>
+
+            <table class="style1">
+                <tr><td>
+                        <table bgcolor="808080">
+                            <tr>
+                                <td>Reference Note:</td>
+                                <td><textarea cols="73" rows="5" >
+                </textarea></td>
+                            </tr>
+                        </table></td>
+                </tr>
+            </table>
+
 
 
 
