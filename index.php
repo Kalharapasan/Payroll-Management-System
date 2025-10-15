@@ -125,7 +125,24 @@
             </td>
             </td>
             </tr>
-            
+
+            <table class="style1">
+                <tr><td>
+                        <table bgcolor="808080">
+                            <tr>
+                                <td>NI Payment:</td>
+                                <td><input type="text" name = "nipayment" style="width: 380px">
+                                </td></tr>
+                            <tr><td>Taxable Pay:</td>
+                                <td><input type="text" name = "taxablepay" style="width: 380px">
+                                </td></tr>
+
+                            <tr><td>Pensionable Pay:</td>
+                                <td><input type="text" name = "pensionablepay" style="width: 380px">
+                                </td></tr>
+
+                        </table></td>
+                
 
 
 
