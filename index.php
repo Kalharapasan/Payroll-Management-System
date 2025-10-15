@@ -29,7 +29,7 @@
 
                 <tr>
                     <td>Address:</td>
-                    <td><input type="text" name = "address" style="width: 300px">
+                        <td><input type="text" name = "address" style="width: 300px">
                     </td>
                     <td>Gender:</td>
                     <td>
@@ -59,9 +59,75 @@
                         </table>
                     </td>
                 </tr>
+
+
+                    <td>
+                        <table bgcolor="C0C0C0">
+                            <tr>
+                                <td>Tax Period:</td>
+                                <td><input type="text" name = "taxperiod" style="width: 100px">
+                                </td>
+                            </tr>
+
+                            <tr><td>Tax Code:</td>
+                                <td><input type="text" name = "taxcode" style="width: 300px">
+                                </td></tr>
+
+                            <tr>
+                                <td>Pay Date:</td>
+                                <td><input type="text" name = "paydate" style="width: 400px">
+                                </td>
+                            </tr>
+
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
             </table>
 
+            <table class="style1">
+                <tr>
+                    <td>Inner City Weighting:</td>
+                    <td><input type="text" name = "innercity" style="width: 200px">
+                    </td>
+                    <td>Tax ToDate:</td>
+                    <td><input type="text" name = "tax" style="width: 200px">
+                    </td>
+                    <td>Pension ToDate:</td>
+                    <td><input type="text" name = "pension" style="width: 200px">
+                    </td>
+                </tr>
+
+                <tr><td>Basic Salary:</td>
+                    <td><input type="text" name = "basicsalary" style="width: 200px">
+                    </td>
+                    <td>Student ToDate:</td>
+                    <td><input type="text" name = "studentref" style="width: 200px">
+                    </td>
+                    <td>NI Code:</td>
+                    <td><input type="text" name = "nicode" style="width: 200px">
+                    </td>
+                </tr>
+
+                <tr><td>Over Time:</td>
+                    <td><input type="text" name = "overtime" style="width: 200px">
+                    </td>
+
+                    <td>Student Loan:</td>
+                    <td><input type="text" name = "studentloan" style="width: 200px">
+                    </td>
+
+                    <td>NI Number:</td>
+                    <td><input type="text" name = "ninumber" style="width: 200px">
+                    </td>
+                </tr>
+            </table>
+            </td>
+            </td>
+            </tr>
             
+
+
 
     </div>
 
