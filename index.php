@@ -38,6 +38,31 @@
                     </td>
                 </tr>
             </table>
+
+            <table class="style1">
+                <tr>
+                    <td>
+                        <table bgcolor="808080">
+                            <tr>
+                                <td>Reference No:</td>
+                                <td><input type="text" name = "referenceno" style="width: 400px"></td>
+                            </tr>
+
+                            <tr><td>Employer:</td>
+                                <td><input type="text" name = "employer" style="width: 400px"></td>
+                            </tr>
+
+                            <tr><td>Emp Address:</td>
+                                <td><input type="text" name = "empaddress" style="width: 400px"></td>
+                            </tr>
+
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+            
+
     </div>
 
 
