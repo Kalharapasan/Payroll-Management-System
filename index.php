@@ -4,9 +4,15 @@ extract($_POST);
 
 if(isset($add))
 {
-    $grosspay = $innercity + $basicsalary + $overtime;
-
+    $grosspay = (float)$innercity + (float)$basicsalary + (float)$overtime;
     $taxablepay = ($grosspay * 9 / 100);
+    $pensionablepay = ($grosspay * 5.5) / 100;
+    $studentloan = ($grosspay * 2.5) / 100;
+    $nipayment = ($grosspay * 2.3) / 100;
+    $deduction = $taxablepay + $pensionablepay + $studentloan + $nipayment;
+    $netpay = $grosspay - $deduction;
+    
+
 }
 
 
@@ -182,7 +188,12 @@ if(isset($add))
                         </tr>
                         <tr>
                             <td>Taxable Pay:</td>
-                            <td><input type="text" name="taxablepay" style="width: 380px" value="<?php echo $taxablepay?>"></td>
+                            <td>
+                                <input type="text" name="taxablepay" style="width: 380px"
+                                       value="$<?php echo $taxablepay?>"
+                                       onfocus="this.value=''"
+                                >
+                            </td>
                         </tr>
                         <tr>
                             <td>Pensionable Pay:</td>
@@ -194,7 +205,12 @@ if(isset($add))
                     <table bgcolor="#C0C0C0">
                         <tr>
                             <td>Gross Pay:</td>
-                            <td><input type="text" name="grosspay" style="width: 400px"></td>
+                            <td>
+                                <input type="text" name="grosspay" style="width: 400px"
+                                       value="$<?php echo $grosspay?>"
+                                       onfocus="this.value=''"
+                                >
+                            </td>
                         </tr>
                         <tr>
                             <td>Deductions:</td>
